@@ -1,0 +1,19 @@
+LOAD CSV WITH HEADERS FROM 'file:///reviews.csv' AS row FIELDTERMINATOR ',' WITH row 
+
+MERGE (p:Rating {score: toFloat(row.rating)})
+
+MERGE (n:Review {
+    name:ID(n),
+    productId:toInteger(row.product_id),
+    userId:toInteger(row.user_id),
+    reviewText:row.review_text,
+    reviewDate:row.review_date,
+    helpfulVotes:toInteger(row.helpful_votes),
+    verifiedPurchase:toBoolean(row.verified_purchase),
+    reviewerAge:toInteger(row.reviewer_age)
+})
+
+MERGE (n)-[r1:IS_RATED]->(p)
+
+// Relationships
+
