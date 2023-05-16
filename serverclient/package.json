@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^4.14.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
     "neo4j-driver": "^5.8.0",
