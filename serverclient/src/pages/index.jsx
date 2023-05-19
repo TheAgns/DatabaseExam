@@ -42,6 +42,9 @@ export default function Home() {
           <h1 className="title">
  <Link href="./sql">SQL</Link>
           </h1>
+          <h1 className="title">
+ <Link href="./mongodb">MongoDB</Link>
+          </h1>
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
