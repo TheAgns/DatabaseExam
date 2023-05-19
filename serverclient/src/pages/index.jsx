@@ -37,9 +37,11 @@ export default function Home() {
             <p>Disover data from SQL</p>
           </a>
           <h1 className="title">
- <Link href="./neo4j">Read</Link>
+ <Link href="./neo4j">NEO4j</Link>
           </h1>
-
+          <h1 className="title">
+ <Link href="./sql">SQL</Link>
+          </h1>
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}

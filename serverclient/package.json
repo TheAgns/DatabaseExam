@@ -12,9 +12,19 @@
     "@prisma/client": "^4.14.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
+    "mssql": "^9.1.1",
+    "mysql": "^2.18.1",
     "neo4j-driver": "^5.8.0",
+    "net": "^1.0.2",
     "next": "13.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "browser": {
+    "tls": false,
+    "net": false,
+    "fs": false,
+    "dns": false,
+    "dgram": false
   }
 }
