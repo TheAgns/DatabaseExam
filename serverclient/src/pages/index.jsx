@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import {AddToCartButton} from "./product"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,9 @@ export default function Home() {
             Nunamarket {"-----> "}
             <code className={styles.code}>using sql, neo4j & mongoDB</code>
           </p>
+          <h1 className="title">
+ <Link href="./cart">Cart</Link>
+          </h1>
           <div>
             <a href="sql.js" target="_blank" rel="noopener noreferrer"></a>
           </div>
@@ -25,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
+          {/* <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
@@ -35,7 +39,7 @@ export default function Home() {
               SQL <span>-&gt;</span>
             </h2>
             <p>Disover data from SQL</p>
-          </a>
+          </a> */}
           <h1 className="title">
  <Link href="./neo4j">NEO4j</Link>
           </h1>
@@ -45,7 +49,12 @@ export default function Home() {
           <h1 className="title">
  <Link href="./mongodb">MongoDB</Link>
           </h1>
-          <a
+          <h1 className="title">
+ <Link href="./product">add</Link>
+          </h1>
+      
+          
+          {/* <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
@@ -67,7 +76,7 @@ export default function Home() {
               MongoDB <span>-&gt;</span>
             </h2>
             <p>Discober data from MongoDB</p>
-          </a>
+          </a> */}
         </div>
       </main>
     </>

@@ -22,16 +22,3 @@ mssql
   });
 
 module.exports = config;
-
-// const config = {
-//   user: MSSQL_USERNAME,
-//   password: MSSQL_PASSWORD,
-//   server: "localhost",
-//   database: "DBExam",
-//   options: {
-//     encrypt: true,
-//     trustServerCertificate: true, // Use this option if using a self-signed certificate
-//   },
-// };
-
-// module.exports = config;

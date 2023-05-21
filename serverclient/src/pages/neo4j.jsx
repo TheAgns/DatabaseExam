@@ -1,5 +1,4 @@
 //import Link from "next/link";
- import {read} from "../lib/neo4j.js"
 
 // export default function Neo4j({ products }) {
 // console.log(products)
@@ -29,6 +28,7 @@
 // }
 
 import Link from "next/link";
+import {read} from "../lib/neo4j.js"
 
 function Neo4j({ products }) {
   const parsedProducts = JSON.parse(products);
@@ -58,7 +58,6 @@ export async function getServerSideProps({ query, params }) {
   `);
 
   const products = JSON.stringify(res.map((record) => record.p));
-  console.log(products);
   return {
     props: {
       products,

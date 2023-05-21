@@ -16,6 +16,9 @@ function SQL({ products }) {
       <h2>
         <Link href="/">Back to home</Link>
       </h2>
+      <h1 className="title">
+ <Link href="./login">Login</Link>
+          </h1>
     </>
   );
 }
@@ -35,8 +38,6 @@ export async function getServerSideProps({ query, params }) {
         orderid: row.orderId
       }));
     }
-
-    console.log(products);
     return {
       props: {
         products,

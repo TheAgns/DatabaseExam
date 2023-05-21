@@ -27,15 +27,11 @@ function Mongo({ items }) {
 export async function getServerSideProps({ query, params }) {
   try {
     const connection = await connect();
-
-    // Fetch items from MongoDB and exclude the _id property
     const items = await connection
       .collection("item")
       .find()
-      .project({ _id: 0 }) // Exclude the _id property
+      .project({ _id: 0 })
       .toArray();
-
-    console.log(items);
     return {
       props: {
         items,
