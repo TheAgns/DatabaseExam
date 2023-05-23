@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { connect } from "../lib/mongodb";
 
-function Mongo({ items }) {
+function Cart({ items }) {
   if (!items) {
     return <p>Loading...</p>;
   }
