@@ -20,8 +20,8 @@ export default function Navbar() {
         </Link>
         <Link href="/cart">
             <div className="checkout">
-                <span>🛒</span>
-                <p>$0.00</p>
+                <><span><p>CART  🛒</p></span></>
+               
             </div>
         </Link>
         </nav>

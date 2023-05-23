@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AddToCartButton({ elementId }) {
+export default function AddToCartButton({ elementId }) {
     const addToCart = async () => {
       try {
         const response = await fetch('/api/addToCart', {
@@ -27,3 +27,4 @@ function AddToCartButton({ elementId }) {
       </button>
     );
   }
+

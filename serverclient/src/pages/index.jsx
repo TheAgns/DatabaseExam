@@ -2,9 +2,10 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from "next/link";
 import AddToCartButton from '../components/AddToCartButton'
-import { read } from '@/lib/neo4j';
+import { read } from '../lib/neo4j';
 
 export default function Home({ products }) {
+  const parsedProducts = JSON.parse(products);
   return (
      <>
         <Head>
@@ -15,15 +16,15 @@ export default function Home({ products }) {
               All Products <span></span>
            </h2>
            <div className={styles.products_container}>
-              {products.map((product) => {
+              {parsedProducts.map((product) => {
                  return (
-                    <div className={styles.product_card} key={product.id}>
-                       <Link href={`products/${product.id}`}>
+                    <div className={styles.product_card} key={product.identity.low}>
+                       <Link href={`products/${product.identity.low}`}>
                        <div className={styles.product_content}>
-                          <h3>{product.name}</h3>
+                          <h3>{product.properties.name}</h3>
                         </div>
                        </Link>
-                       <p className={styles.para}>${product.price}</p>
+                       <p className={styles.para}>${product.properties.price}</p>
                        <AddToCartButton elementId={product.identity.low}>Add to cart 🛒</AddToCartButton>
                     </div>
                  );
@@ -41,7 +42,7 @@ export default function Home({ products }) {
     limit 25
   `);
 
-  const products = JSON.stringify(res.map((record) => record.p));
+  const products = await JSON.stringify(res.map((record) => record.p));
   return {
     props: {
       products,
