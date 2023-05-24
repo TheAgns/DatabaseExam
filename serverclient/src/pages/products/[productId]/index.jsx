@@ -11,6 +11,7 @@ export default function Product({product}){
     if (router.isFallback) {
         return <div>Loading...</div>
     }
+    const {productId} = router.query
     const { name, price } = parsedProduct[0].properties;
 
   return (
@@ -22,7 +23,7 @@ export default function Product({product}){
         <h3 className={styles.title}>{name}</h3>
         <p className={styles.price}>${price}</p>
         <button className='btn'>Add to cart 🛒</button>
-        <Link href="/" style={{ textDecoration: '', color: 'blue', fontSize: 20 }}>
+        <Link href={`./${productId}/reviews`}parseHref style={{ textDecoration: '', color: 'blue', fontSize: 20 }}>
           <h4>Reviews</h4>
         </Link>
       </div>
@@ -37,8 +38,6 @@ export async function getServerSideProps(context) {
 WHERE ID(p) = ${productId}
 RETURN p
   `);
-
-  //const product = res[0]
 
 
     const data = JSON.stringify(res.map((record) => record.p));

@@ -18,10 +18,16 @@ export default function Navbar() {
                 </p>
             </div>
         </Link>
+        <Link href="/">
+            <div className={styles.logo}>
+                <p>
+                    Orders <span className={styles.logo_span}></span>
+                </p>
+            </div>
+        </Link>
         <Link href="/cart">
             <div className="checkout">
                 <><span><p>CART  🛒</p></span></>
-               
             </div>
         </Link>
         </nav>
