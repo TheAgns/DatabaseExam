@@ -16,7 +16,7 @@ export default function Home({ products }) {
               All Products <span></span>
            </h2>
            <h1 className="title">
- <Link href="./login">login</Link>
+ <Link href="./getUsers">GET INFO</Link>
           </h1>
            <div className={styles.products_container}>
               {parsedProducts.map((product) => {
@@ -25,6 +25,7 @@ export default function Home({ products }) {
                        <Link href={`products/${product.identity.low}`}>
                        <div className={styles.product_content}>
                           <h3>{product.properties.name}</h3>
+                          <h3></h3>
                         </div>
                        </Link>
                        <p className={styles.para}>${product.properties.price}</p>

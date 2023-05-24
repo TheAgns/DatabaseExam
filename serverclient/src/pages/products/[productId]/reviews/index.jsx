@@ -26,10 +26,14 @@ export default function Reviews({reviews}){
                     <Link href={`./${review}`}>
                         <div className={styles.product_content}>
                             <h3>{review.properties.rating + "⭐️"}</h3>
+                            <h3>{review.properties.helpfulVotes.low}👍</h3>
                         </div>
                     </Link>
                     <p className={styles.para}>{review.properties.reviewText}</p>
+                    <br></br>
+                    <br></br>
                 </div>
+                
             );
        })}
        </div>

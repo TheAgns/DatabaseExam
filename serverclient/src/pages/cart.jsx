@@ -57,7 +57,6 @@ export async function getServerSideProps({ query, params }) {
   const { db } = await connect();
   const cartCollection = db.collection("cart");
 
-  // Calculate total price using aggregation pipeline
   const totalPriceRes = await cartCollection.aggregate([
     { $unwind: "$products" },
     {
@@ -66,9 +65,8 @@ export async function getServerSideProps({ query, params }) {
         totalPrice: { $sum: "$products.price" }
       }
     }
-  ]).toArray(); // Convert the result to an array
+  ]).toArray();
 
-  // Retrieve cart items
   const cartItem = await cartCollection.findOne({
     _id: "646a0b2cde06068eacbda790",
   });
