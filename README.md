@@ -4,9 +4,9 @@
   - [Folder structure:](#folder-structure)
 - [Step 2](#step-2)
   - [Project solution:](#Project-resume)
+  - [Database diagrams:](#Database-diagrams)
   - [Argumentation of Choices:](#argumentation-of-choices)
 - [Step 3](#step-3)
-  - [Database diagrams:](#Database-diagrams)
   - [Further development/improvements](#further-developmentimprovements)
 
 # Step 1
@@ -22,5 +22,12 @@
 📁MongoDB --> scripts for MongoDB
 
 # Step 2
-## 
+## Project solution:
+
+
+## Database diagrams
+diagrams
+
+# Step 3
+## Further development/improvements
 
