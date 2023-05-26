@@ -34,12 +34,10 @@ export default function Cart({cart, totalPrice}) {
     {/* <title>CART</title> */}
 
       <div className={styles.products_container}>
-      <p>{"Total price: " + totalPrice + "$"}</p>
-        
+      <p>{"Total price: " + totalPrice + "$"}<button className="btn">Buy now</button></p>
               {cart.map((product) => {
                  return (
                     <div className={styles.product_card} key={product}>
-                
                        <div className={styles.product_content}>
                           <h3>{product.name}</h3>
                            <p className={styles.para}>${product.price}</p>

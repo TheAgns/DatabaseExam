@@ -11,10 +11,10 @@ export default function Navbar() {
                 </p>
             </div>
         </Link>
-        <Link href="/">
+        <Link href="./myAccount">
             <div className={styles.logo}>
                 <p>
-                    Users <span className={styles.logo_span}></span>
+                    My Account <span className={styles.logo_span}></span>
                 </p>
             </div>
         </Link>

@@ -22,7 +22,7 @@ export default function AddToCartButton({ elementId }) {
     };
   
     return (
-      <button onClick={addToCart}>
+      <button className='btn' onClick={addToCart}>
         Add to Cart
       </button>
     );

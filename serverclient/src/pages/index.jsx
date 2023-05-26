@@ -15,9 +15,6 @@ export default function Home({ products }) {
            <h2 className={styles.title}>
               All Products <span></span>
            </h2>
-           <h1 className="title">
- <Link href="./getUsers">GET INFO</Link>
-          </h1>
            <div className={styles.products_container}>
               {parsedProducts.map((product) => {
                  return (

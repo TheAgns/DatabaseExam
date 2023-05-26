@@ -14,7 +14,7 @@
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
     "mongoose": "^7.1.2",
-    "mssql": "^9.1.1",
+    "mssql": "^6.3.0",
     "mysql": "^2.18.1",
     "neo4j-driver": "^5.8.0",
     "net": "^1.0.2",
