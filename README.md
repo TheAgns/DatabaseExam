@@ -1,5 +1,5 @@
+# Nunamarket using MSSQL, Neo4j & MongoDB
 ## Table of contents
-- [Nunamarket using MSSQL, Neo4j & MongoDB](#Nunamarket-using-MSSQL,-Neo4j-&-MongoDB)
 - [Step 1](#step-1)
   - [Folder structure:](#folder-structure)
 - [Step 2](#step-2)
