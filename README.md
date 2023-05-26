@@ -27,6 +27,9 @@
 
 ## Database diagrams
 diagrams
+![Screenshot](NEO4j.png)
+![Screenshot](Mongodb.png)
+![Screenshot](SQL.png)
 
 # Step 3
 ## Further development/improvements
