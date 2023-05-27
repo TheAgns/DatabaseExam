@@ -11,6 +11,5 @@ export async function getUser(userId) {
     sql.close();
   }
 }
-//typeof res;
 
 module.exports = { getUser };

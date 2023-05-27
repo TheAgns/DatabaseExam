@@ -3,9 +3,8 @@
 - [Step 1](#step-1)
   - [Folder structure:](#folder-structure)
 - [Step 2](#step-2)
-  - [Project solution:](#Project-resume)
+  - [Project solution & Argumentation of Choices:](#Project-resume)
   - [Database diagrams:](#Database-diagrams)
-  - [Argumentation of Choices:](#argumentation-of-choices)
 - [Step 3](#step-3)
   - [Further development/improvements](#further-developmentimprovements)
 

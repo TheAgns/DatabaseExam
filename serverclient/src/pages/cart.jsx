@@ -1,31 +1,6 @@
 import Link from "next/link";
 import { connect } from "../lib/mongodb";
-import {useState} from 'react';
 import styles from '../styles/components/Product.module.css';
-import Head from 'next/head';
-
-// function Cart({ items }) {
-//   if (!items) {
-//     return <p>Loading...</p>;
-//   }
-
-//   const itemIds = items.map((item) => item.item_id);
-//   const productIds = items.map((item) => item.product_id);
-
-//   return (
-//     <>
-//       <h1>MongoDB</h1>
-//       <ul>
-//         {itemIds.map((itemId, index) => (
-//           <li key={index}>{itemId}</li>
-//         ))}
-//       </ul>
-//       <h2>
-//         <Link href="/">Back to home</Link>
-//       </h2>
-//     </>
-//   );
-// }
 
 export default function Cart({cart, totalPrice}) {
   return (
