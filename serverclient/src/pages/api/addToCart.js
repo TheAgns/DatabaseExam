@@ -30,8 +30,8 @@ export default async function handler(req, res) {
     }
 
     const product = productResult.records[0].get("p").properties;
-    const product1 = productResult.records[0].get("p").elementId;
-    console.log(product1);
+    const productId = productResult.records[0].get("p").identity.low;
+    //console.log(product1);
     const { db } = await connect();
     const cartCollection = db.collection("cart");
 
@@ -47,7 +47,7 @@ export default async function handler(req, res) {
         {
           $push: {
             products: {
-              id: product1,
+              id: productId,
               name: product.name,
               price: product.price,
             },

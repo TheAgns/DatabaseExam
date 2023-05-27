@@ -1,9 +1,10 @@
 import React from 'react';
 
 export default function OrderNowButton({ cart, totalPrice }) {
-  console.log(totalPrice);
 
   const orderNow = async () => {
+    //console.log(cart)
+    //console.log(totalPrice)
     try {
       const response = await fetch('/api/orderNow', {
         method: 'POST',
@@ -22,6 +23,7 @@ export default function OrderNowButton({ cart, totalPrice }) {
       console.error(error);
     }
   };
+  //console.log(cart);
 
   return (
     <button className='btn' onClick={orderNow}>
