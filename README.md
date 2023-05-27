@@ -15,11 +15,10 @@
 
 📁serverclient --> our NunaMarket application using next.js (Application code) readme on how to run in, inside the folder
 
-📁Neo4j --> scripts for Neo4j
-
-📁MSSQL --> scripts for Mssql
-
-📁MongoDB --> scripts for MongoDB
+📁Scripts --> contains all scripts
+  📁Neo4j --> scripts for Neo4j
+    📁MSSQL --> scripts for Mssql
+      📁MongoDB --> scripts for MongoDB
 
 # Step 2
 ## Project solution:
@@ -42,7 +41,7 @@ diagrams
 
 ![Screenshot](Neo4j.png)
 ![Screenshot](mongo.png)
-![Screenshot](SQL.png)
+![Screenshot](mssql.png)
 
 # Step 3
 ## Further development/improvements
