@@ -4,15 +4,20 @@ import styles from '../styles/components/Product.module.css';
 import OrderNowButton from '../components/OrderNowButton'
 
 export default function Cart({cart, totalPrice}) {
+  //console.log(cart)
   return (
     <div>
+      
       <h1>CART</h1>
     {/* <title>CART</title> */}
 
       <div className={styles.products_container}>
       <p>{"Total price: " + totalPrice + "$"}</p>
+      
 <OrderNowButton cart={cart} totalPrice={totalPrice}></OrderNowButton>
+
               {cart.map((product) => {
+              
                  return (
                     <div className={styles.product_card} key={product}>
 
