@@ -30,7 +30,8 @@ export default async function handler(req, res) {
     }
 
     const product = productResult.records[0].get("p").properties;
-
+    const product1 = productResult.records[0].get("p").elementId;
+    console.log(product1);
     const { db } = await connect();
     const cartCollection = db.collection("cart");
 
@@ -43,7 +44,15 @@ export default async function handler(req, res) {
       // If the cart item already exists, add the product to its 'products' array
       await cartCollection.updateOne(
         { _id: "646a0b2cde06068eacbda790" },
-        { $push: { products: { name: product.name, price: product.price } } }
+        {
+          $push: {
+            products: {
+              id: product1,
+              name: product.name,
+              price: product.price,
+            },
+          },
+        }
       );
     } else {
       // hvis den cart item ikke findes, så laver den en ny med produktet
