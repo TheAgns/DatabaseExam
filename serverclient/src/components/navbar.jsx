@@ -18,7 +18,7 @@ export default function Navbar() {
                 </p>
             </div>
         </Link>
-        <Link href="/">
+        <Link href="/orders">
             <div className={styles.logo}>
                 <p>
                     Orders <span className={styles.logo_span}></span>

@@ -19,7 +19,7 @@ export default function Cart({cart, totalPrice}) {
               {cart.map((product) => {
               
                  return (
-                    <div className={styles.product_card} key={product}>
+                    <div className={styles.product_card} key={product.id}>
 
                        <div className={styles.product_content}>
                           <h3>{product.name}</h3>
