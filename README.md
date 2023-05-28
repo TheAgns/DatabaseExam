@@ -1,4 +1,8 @@
 # Nunamarket using MSSQL, Neo4j & MongoDB
+Group:
+Markus Agnsgaard - cph-ma587@cphbusiness.dk
+Rasmus Dalgaard - cph-rd92@öcphbusiness.dk
+Thomas Amorsen - cph-tha181@business.dk
 ## Table of contents
 - [Step 1](#step-1)
   - [Folder structure:](#folder-structure)
