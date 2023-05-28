@@ -40,7 +40,7 @@ diagrams
 
 ![Screenshot](Neo4j.png)
 ![Screenshot](mongo.png)
-![Screenshot](MSSQL.png)
+![Screenshot](mssql.png)
 
 # Step 3
 ## Further development/improvements
