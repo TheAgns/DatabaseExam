@@ -42,7 +42,4 @@ diagrams
 ![Screenshot](mongo.png)
 ![Screenshot](mssql.png)
 
-# Step 3
-## Further development/improvements
-
 
