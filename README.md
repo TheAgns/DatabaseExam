@@ -38,7 +38,7 @@ At the same time MSSQL allows us to establish relationships between different ta
 ## Database diagrams
 diagrams
 
-![Screenshot](Neo4j.png)
+![Screenshot](neo.png)
 ![Screenshot](mongo.png)
 ![Screenshot](mssql.png)
 
