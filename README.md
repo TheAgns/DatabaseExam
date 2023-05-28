@@ -5,8 +5,6 @@
 - [Step 2](#step-2)
   - [Project solution & Argumentation of Choices:](#Project-resume)
   - [Database diagrams:](#Database-diagrams)
-- [Step 3](#step-3)
-  - [Further development/improvements](#further-developmentimprovements)
 
 # Step 1
 ## Folder structure:
