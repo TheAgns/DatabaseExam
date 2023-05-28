@@ -14,6 +14,8 @@
 
 📁serverclient --> our NunaMarket application using next.js (Application code) readme on how to run in, inside the folder
 
+📁mongo --> Sharded cluster in a docker-compose file --> readme file on how to setup
+
 📁Scripts --> contains all scripts
 -      📁Neo4j --> scripts for Neo4j
 -      📁MSSQL --> scripts for Mssql
