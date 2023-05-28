@@ -5,6 +5,8 @@
 - [Step 2](#step-2)
   - [Project solution & Argumentation of Choices:](#Project-resume)
   - [Database diagrams:](#Database-diagrams)
+- [Step 3](#step-3)
+ - [Use cases:](#Use-cases)
 
 # Step 1
 ## Folder structure:
@@ -41,5 +43,16 @@ diagrams
 ![Screenshot](neo.png)
 ![Screenshot](mongo.png)
 ![Screenshot](mssql.png)
+
+# Step 3
+## Use cases
+Customer
+As a Customer, I want to buy Products
+As a Customer, I want to see my Orders
+As a Customer, I want to view reviews on a product
+As a Customer, I want to get recommendations for other Products based on the Product Category of the Product I am currently looking at.
+As a Customer, i want to add a product to my cart
+As a Customer, I want to see my personal information (Username, Password, Email, Firstname, Last Name, Age)
+
 
 
