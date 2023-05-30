@@ -14,16 +14,16 @@ Thomas Amorsen - cph-tha181@business.dk
 
 # Step 1
 ## Folder structure:
-📁data --> all data including csv and json files for NEO4j, MSSQL & MongoDB
+📁data --> All data including csv and json files for NEO4j, MSSQL & MongoDB
 
-📁serverclient --> our NunaMarket application using next.js (Application code) readme on how to run in, inside the folder
+📁serverclient --> Our NunaMarket application using next.js (Application code) readme on how to run in, inside the folder
 
 📁mongo --> Sharded cluster in a docker-compose file --> readme file on how to setup
 
-📁Scripts --> contains all scripts
--      📁Neo4j --> scripts for Neo4j
--      📁MSSQL --> scripts for Mssql
--      📁MongoDB --> scripts for MongoDB
+📁Scripts --> Contains all scripts
+-      📁Neo4j --> Scripts for Neo4j
+-      📁MSSQL --> Scripts for Mssql
+-      📁MongoDB --> Scripts for MongoDB
 
 # Step 2
 ## Project solution:
@@ -31,11 +31,11 @@ We have in our project made a retail store, where you as a user can buy products
 
 MongoDB
 We've used MongoDB for our Cart system:
-The reason why is because it excels at handling flexible and unstructured data. it makes sense because the cart is likely to have a dynamic structure that can vary from one customer to another. MongoDB also allows us to store shopping cart data as JSON documents, providing the flexibility to add or remove products easily. Furthermore MongoDB is really good at handling large amounts of data and its scalability make it suitable for storing shopping cart information, if our store was to grow even bigger and expand.
+The reason why is because it excels at handling flexible and unstructured data. It makes sense because the cart is likely to have a dynamic structure that can vary from one customer to another. MongoDB also allows us to store shopping cart data as JSON documents, providing the flexibility to add or remove products easily. Furthermore MongoDB is really good at handling large amounts of data and its scalability make it suitable for storing shopping cart information, if our store was to grow even bigger and expand.
 
 Neo4j
 We've used Neo4j to handle our product catalog and reviews to each product
-the reason we choose neo4j for this is because it is good to handle highly connected data and relationships. Using Neo4j for our product catalog and reviews makes sense because it allows us to represent the complex relationships between products, such as categorizations, variations, and recommendations and at the sametime we used a Similiairty algoritm. Using Neo4j, we are able to  create nodes to represent products and connect them with relationships to product reviews, related products. Neo4j is suitable for providing personalized product recommendations and analyzing relationships within your catalog for even further improvements and work.
+the reason we choose neo4j for this is because it is good to handle highly connected data and relationships. Using Neo4j for our product catalog and reviews makes sense because it allows us to represent the complex relationships between products, such as categorizations, variations, and recommendations and at the sametime we used a Similiairty algoritm. Using Neo4j, we are able to  create nodes to represent products and connect them with relationships to product reviews, related products. Regarding further improvements to Nunamarket using Neo4j, it is also very suitable for providing personalized product recommendations and analyzing relationships within the catalog.
 
 MSSQL
 We've used MSSQL to handle our users, orders and orderlines
