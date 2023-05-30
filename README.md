@@ -42,12 +42,15 @@ We've used MSSQL to handle our users, orders and orderlines
 MSSQL uses a rigid schema, ensuring data consistency and integrity. This means that we are able to define the structure of our user table to store customer details such as names andaddresses. The predefined schema ensures that data is stored accurately and uniformly, which is essential for maintaining the integrity of user related information.
 At the same time MSSQL allows us to establish relationships between different tables, making it ideal for managing order related data. By using tables such as orders and order lines, we can capture order specific information such as order IDs, timestamps, and the products purchased.
 ## Database diagrams
-Neo4j
+
 ![Screenshot](neo.png)
-MongoDB
+Neo4j
+
 ![Screenshot](mongo.png)
-MSSQL
+MongoDB
+
 ![Screenshot](mssql.png)
+MSSQL
 
 # Step 3
 ## Use cases
