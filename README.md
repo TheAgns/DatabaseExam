@@ -2,7 +2,7 @@
 Group:
 Markus Agnsgaard - cph-ma587@cphbusiness.dk
 Rasmus Dalgaard - cph-rd92@cphbusiness.dk
-Thomas Amorsen - cph-ta181@business.dk
+Thomas Amorsen - cph-ta181@cphbusiness.dk
 ## Table of contents
 - [Step 1](#step-1)
   - [Folder structure:](#folder-structure)
