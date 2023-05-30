@@ -3,6 +3,9 @@ Group:
 Markus Agnsgaard - cph-ma587@cphbusiness.dk
 Rasmus Dalgaard - cph-rd92@cphbusiness.dk
 Thomas Amorsen - cph-ta181@cphbusiness.dk
+
+Database video presentation: https://youtu.be/MKpTZQ502oI
+
 ## Table of contents
 - [Step 1](#step-1)
   - [Folder structure:](#folder-structure)
