@@ -50,13 +50,9 @@ diagrams
 
 # Step 3
 ## Use cases
-
-# As a Customer, I want to buy Products
-# As a Customer, I want to see my Orders
-# As a Customer, I want to view reviews on a product
-# As a Customer, I want to get recommendations for other Products based on the Product Category of the Product I am currently looking at.
-# As a Customer, i want to add a product to my cart
-# As a Customer, I want to see my personal information (Username, Password, Email, Firstname, Last Name, Age)
-
-
-
+Markup : * As a Customer, I want to buy Products
+         * As a Customer, I want to see my Orders
+         * As a Customer, I want to view reviews on a product
+         * As a Customer, I want to get recommendations for other Products based on the Product Category of the Product I am currently looking at.
+         * As a Customer, i want to add a product to my cart
+         * As a Customer, I want to see my personal information (Username, Password, Email, Firstname, Last Name, Age)
